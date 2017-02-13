@@ -1,0 +1,312 @@
+
+body {
+  font-family: 'Armata', sans-serif;
+  font-size: 13px;
+}
+
+
+
+/*======= STANDARD BROWSER SIZE NAVIGATION STYLING ========*/
+
+/*LOGO*/
+img {
+    display: block;
+    margin: auto;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 10%;
+    position: relative;
+}
+
+#container{
+    padding-top: 3em;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: green;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+
+#cancel-container{
+    width: 100%;
+    padding: 10px;
+}
+
+div.psw {
+    float: right;
+    
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/*NEON WORDS*/
+.neon {
+    position: relative;
+    text-align:center;
+    font-size:6em;
+    font-family: Pacifico;
+    margin:20px 0 20px 0;
+  color: #FFDD1B;
+    text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+
+    
+}
+
+.neon:hover{
+    color: white;
+    -webkit-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+    animation: neonAnimation 1.5s ease-in-out infinite alternate;   }
+
+
+    
+    
+    @-webkit-keyframes neonAnimation {
+        from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+      /*Moz prefix*/
+      @-moz-keyframes neonAnimation {
+        from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+      /*No prefix*/
+      @keyframes neonAnimation {
+       from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  .neon {
+    font-size: 3;
+  }
+}
+
+
+/*NAVBAR*/
+#nav { 
+  background-color: #FFDD1B;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
+    font-family: 
+}
+
+.main-menu {
+  font-size: 1em;
+  position: relative;
+  width: 100%;
+    color: white;
+    background-color: #FFDD1B;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+ul li a {
+  color: #FFFFFF;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  min-width: 140px;
+  text-align: center;
+  transition: all .75s;
+  -moz-transition: all .75s;
+  -webkit-transition: all .75s;
+  -o-transition: all .75s;
+}
+
+ul li:hover a {
+  background-color: #ffef99;
+  color: #f3f3f3;
+}
+
+ul li:hover ul a {
+  background: #f3f3f3;
+  color: #ffef99;
+  height: 40px;
+  line-height: 40px;
+}
+
+li:hover ul a:hover {
+  color: #ECECEC;
+  background-color: #ffef99;
+}
+
+li ul { display: none; }
+
+li ul li {
+  display: block;
+}
+
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+ul li a:hover + .subs, .subs:hover { display: block; }
+
+
+/*======= MEDIA QUERIES FOR NAVIGATION ======*/
+
+@media screen and (max-width: 600px) {
+  
+  ul li { width: 100px; }
+  ul li a { min-width: 90px; } 
+  li ul li a {
+    width: auto;
+    min-width: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 420px) {
+  
+  ul li { width: 100%; }
+  ul li a {
+    margin-top: 1px;
+    background: rgba(178,169,145,.5);
+  }
+  li ul li a { 
+    width: 100%; 
+    font-size: 1em; 
+  }
+  ul li:hover a { 
+    background-color: #644BFF;
+    color: #FFFFFF;
+  }
+  ul li:hover ul a {
+    background: #F3F3F3;
+    color: #B0A991;
+  }
+  li:hover ul a:hover {
+    color: #644BFF;
+    background-color: #F3F3F3;
+  }
+  
+}

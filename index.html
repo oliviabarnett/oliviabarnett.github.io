@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.css">
+	    <title> home page </title>
+        
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Pacifico' type='text/css' />
+        
+        <script src= "main.js"> </script>
+        <?php include 'form.php';?>
+	</head>
+
+	<body>
+        <div id="header">
+            <a href = "./"> 
+                <img id = "logo" src =  https://s-media-cache-ak0.pinimg.com/236x/64/14/59/6414594c9e29ba60aecf45c8770650ca.jpg >
+            </a>
+            
+          <div id="nav">
+            <ul class="main-menu">
+                <li> <a> tips and exercises</a> </li>
+                <li> <a href="graphs/">graphs</a></li>
+                <li> <a href="myNetwork/">my network</a></li>
+                <li> <a> community</a></li>
+                <li> <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">login</a> </li>
+      
+           </ul>
+          </div>
+        </div>
+        
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="action_page.php">
+            
+
+            <div class="container">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" id = "userInput" required>
+                <br>
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" id = "password" required>
+                <br>
+              <button type="submit" onclick="document.getElementById('id01').style.display='none'">Login</button><br>
+              <input type="checkbox" checked="checked">  Remember me
+            </div>
+              
+            <div id="cancel-container" style="background-color:#f1f1f1">
+              <button type="button" onclick= window.open(www.wikipedia.org) class="cancelbtn">Cancel</button>
+              <div class="psw">Forgot <a href="#">password?</a></div>
+            </div>
+          </form>
+        </div>
+        
+    	
+        <div id = "container">
+            <h1 class = "neon"> Hello!</h1> 
+            <h2 class = "neon"> You seem to be doing great lately!</h1> 
+        </div>
+        
+	</body>
+</html>

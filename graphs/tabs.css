@@ -1,0 +1,53 @@
+#sentiment{ 
+    position: relative;
+    border: 1px solid gray;
+    width: 36em;
+    height: 40em;
+    float: right;
+    background-color: #fafad2;   
+    margin:3.3em auto;
+    margin-right: 4em;
+    font-family: "Lucida Grande", sans-serif;
+
+}
+ul.tab {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    text-align: center;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+    float: left;
+    position: relative;
+    margin-left: 1.1em;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0px 2px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #fafad2;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 4px 12px;
+    border-top: none;
+}
+
+p{ padding: 5px 0px; }
