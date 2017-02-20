@@ -5,11 +5,18 @@
 	<head>
 
 		<meta charset="utf-8">
+        <script src=jQueryMultiselect.js></script>
+        <link rel="stylesheet" href="jQueryMultiselect.css">
+
 		<link rel="stylesheet" href="../main.css">
         <link rel="stylesheet" href="network.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        
+        
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         
         <script type="text/javascript" src="vis.min.js"></script>
     <link href="vis.min.css" rel="stylesheet" type="text/css" />
         <script src="network.js"></script>
@@ -22,7 +29,7 @@
 
         <div id="header">
             <a href = "../index.html"> 
-                <img id = "logo" src =  https://s-media-cache-ak0.pinimg.com/236x/64/14/59/6414594c9e29ba60aecf45c8770650ca.jpg >
+                <img id = "logo" src =  https://s-media-cache-ak0.pinimg.com/originals/c9/50/2e/c9502eecefd4c3cb6aa9cffb8e8cc195.jpg >
             </a>
             
             
@@ -38,11 +45,52 @@
 
         
 
+    
+    <div id= "welcome">
+            <p>Welcome to your Support Network. This network is an automatic system that
+        informs the three people in your network in the case that data analysis 
+        yields results indicating you have not been feeling well lately. We know it's hard to ask people for help and support. We also know that sometimes, you yourself don't know that you could use someone's help or support. My Support Network takes care of updating, informing and explaining your feelings to the people in your network.</p>
+        <p>Click on individual members of your Support Network to view detailed information about their profile and to manage their settings.<br>Click on <i>"Manage My Support Network"</i> to edit members of your network and their contact information. </p>
+        </div>   
+        
     <div id="mynetwork"></div>
 
+        
+    <div id="info">
+        <h2 id="infoName">Settings for Me:</h2>
+        <div class="settings">
+            <label> Update after: </label>
+            <select>
+              <option value="one week">one week</option>
+              <option value="two weeks">two weeks</option>
+              <option value="one month">one month</option>
+              <option value="six months">six months</option>
+            </select>
+        </div>
 
+            <br>
+        
+        <div class="settings">
+            <label> Follows: </label>
+            <div id= "multiSelect">
+            <input type="radio" name="track" id="track" value="track" /><label for="track">Facebook</label><br />
+            <input type="radio" name="event" id="event" value="event"  /><label for="event">Instagram</label><br />
+            <input type="radio" name="message" id="message" value="message" /><label for="message">Snapchat</label><br />
+            <input type="radio" name="message" id="message" value="message" /><label for="message">Messages</label><br />
+            </div>
+        </div>
 
-
+            <br>
+        <div class="settings">
+            <label> Alert via: </label>
+            <select>
+              <option value="Text">Volvo</option>
+              <option value="Email">Saab</option>
+              <option value="Facebook Message">Opel</option>
+            </select>
+        </div>
+        
+    </div>
 
 	</body>
 </html>

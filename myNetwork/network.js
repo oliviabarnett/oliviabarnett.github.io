@@ -37,19 +37,19 @@ $(document).ready(function(){
               useBorderWithImage: false  // only for image shape
             },
             color: {
-              border: '#FFDD1B',
-              background: '#ffef99',
+              border: "gray",
+              background: '#9E8A99',
               highlight: {
-                border: '#FFDD1B',
-                background: '#FFDD1B'
+                border: '#9E8A99',
+                background: '#cec0ca'
               },
               hover: {
-                border: '#2B7CE9',
-                background: '#D2E5FF'
+                border: '#9E8A99',
+                background: '#cec0ca'
               }
             },
             font: {
-              color: '#343434',
+              color: 'black',
               size: 14, // px
               face: 'arial',
               background: 'none',
@@ -105,9 +105,19 @@ $(document).ready(function(){
     // initialize your network!
     var network = new vis.Network(container, data, options);
     
+    network.on("click", function (params) {
+        if (params.nodes.length != 0) {
+            console.log(params);
+           var infoName = document.getElementById("infoName");
+            var ids = params.nodes;
+            var clickedNodes = nodes.get(ids);
+            var name = clickedNodes[0].label;
+            infoName.innerHTML = "Settings for " + name + ":";}
+    });
     
     
+   /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
     
-    
-    
+  
 });
