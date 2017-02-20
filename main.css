@@ -1,10 +1,9 @@
 
+*{}
 body {
   font-family: 'Armata', sans-serif;
   font-size: 13px;
 }
-
-
 
 /*======= STANDARD BROWSER SIZE NAVIGATION STYLING ========*/
 
@@ -12,20 +11,18 @@ body {
 img {
     display: block;
     margin: auto;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    width: 10%;
+    width: 100%;
+    height: 150px;
     position: relative;
+    opacity: 0.85;
 }
 
-#container{
-    padding-top: 3em;
-}
+#container{padding-top: 2em;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 75%;
-    padding: 12px 20px;
+    padding: 12px 30px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -59,7 +56,6 @@ button {
 
 div.psw {
     float: right;
-    
     padding-top: 16px;
 }
 
@@ -135,7 +131,7 @@ div.psw {
     font-size:6em;
     font-family: Pacifico;
     margin:20px 0 20px 0;
-  color: #FFDD1B;
+  color: #FFE348;
     text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -194,46 +190,39 @@ div.psw {
 
 /*NAVBAR*/
 #nav { 
-  background-color: #FFDD1B;
-  height: 50px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  width: 100%;
-    font-family: 
 }
 
 .main-menu {
-  font-size: 1em;
-  position: relative;
+  position: relative; 
+  background-color: #9E8A99;
   width: 100%;
-    color: white;
-    background-color: #FFDD1B;
+  height: 6.6em;
+  line-height: 100%;
 }
 
 ul {
   list-style-type: none;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 2px;
   position: relative;
 }
 
 ul li {
   display: inline-block;
-  padding: 0;
   text-transform: uppercase;
-  width: 150px;
+  font-family:sans-serif;
+  width: 190px;
 }
 
 ul li a {
-  color: #FFFFFF;
+  color: #fff9c2;
+  font-size: 16px;
   display: block;
-  height: 50px;
-  line-height: 50px;
-  margin: 0;
-  min-width: 140px;
-  text-align: center;
+  line-height: 89px;
   transition: all .75s;
   -moz-transition: all .75s;
   -webkit-transition: all .75s;
@@ -241,32 +230,18 @@ ul li a {
 }
 
 ul li:hover a {
-  background-color: #ffef99;
-  color: #f3f3f3;
-}
-
-ul li:hover ul a {
-  background: #f3f3f3;
-  color: #ffef99;
-  height: 40px;
-  line-height: 40px;
-}
-
-li:hover ul a:hover {
-  color: #ECECEC;
-  background-color: #ffef99;
+  background-color: #FFDFCC;
+  color: #9E8A99;
 }
 
 li ul { display: none; }
 
-li ul li {
-  display: block;
-}
+li ul li {display: block;}
 
 li ul li a {
   width: auto;
-  min-width: 100px;
-  padding: 0 20px;
+  min-width: 120px;
+  padding: 0;
 }
 
 ul li a:hover + .subs, .subs:hover { display: block; }
@@ -289,24 +264,23 @@ ul li a:hover + .subs, .subs:hover { display: block; }
   
   ul li { width: 100%; }
   ul li a {
-    margin-top: 1px;
-    background: rgba(178,169,145,.5);
+    margin: 2px;
+    background: #8fc8c8;
   }
   li ul li a { 
     width: 100%; 
     font-size: 1em; 
   }
   ul li:hover a { 
-    background-color: #644BFF;
+    background-color: #9be7c8;
     color: #FFFFFF;
   }
   ul li:hover ul a {
-    background: #F3F3F3;
-    color: #B0A991;
+    color: #FFFFFF;
   }
   li:hover ul a:hover {
-    color: #644BFF;
-    background-color: #F3F3F3;
+    color: #FFFFFF;
+    background-color: #9be7c8;
   }
   
 }
