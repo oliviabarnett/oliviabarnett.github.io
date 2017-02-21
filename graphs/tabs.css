@@ -1,13 +1,22 @@
+#graphinstructions{
+    height: 50px;
+    width: 580px;
+    background-color: #FBF4E9;
+    border: 1px solid #9E8A99;
+    font-size: 13px;
+    margin-left: 3.4em;
+}
+#graphinstructions p{ padding: 3px 7px;}
+
 #sentiment{ 
     position: relative;
-    border: 1px solid gray;
-    width: 36em;
+    border: 1px solid #9E8A99;
+    width: 37em;
     height: 40em;
-    float: right;
-    background-color: #fafad2;   
-    margin:3em auto;
-    margin-right: 4em;
+    float: left;
+    background-color: #FBF4E9; 
     font-family: "Lucida Grande", sans-serif;
+    margin-top: -3.5em;
 
 }
 ul.tab {
@@ -15,44 +24,41 @@ ul.tab {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #ccc;
+    border: 1px solid #9E8A99;
+    background-color: #9E8A99;
     display: inline-block;
     width: 100%;
 }
 
 /* Float the list items side by side */
+/* this is the purple tab div*/
 ul.tab li {
     float: left;
     position: relative;
-    width: 33.3333%;
+    width: 12em;
     height: 5em;
-    
-    
 }
 
 /* Style the links inside the list items */
 ul.tab li a {
     color: black;
     text-align: center;
-    padding: 0px 0px;
     text-decoration: none;
     font-size: 12px;
     display: inline-block;
+    width: 15em;
+    height: 8em;
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: #ddd;}
+ul.tab li a:hover {background-color: #FBF4E9;}
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #fafad2;}
+ul.tab li a:focus, .active {background-color: #FBF4E9;}
 
 /* Style the tab content */
 .tabcontent {
-    padding: 4px 12px;
-    border-top: none;
-
-
+    padding: 2px 10px;
 }
 
 p{ padding: 5px 0px; }

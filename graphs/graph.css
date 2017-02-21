@@ -4,8 +4,8 @@
     height: 35em;
     position: relative;
     float: left;
-    margin:7em auto;
-    margin-left: 4em;
+    margin:4em 3.1em;
+    border: 1px solid #9E8A99;
 
 }
 
@@ -38,10 +38,10 @@
       stroke: #4f81bd;
     }
     .vis-graph-group1 {
-      fill:#f79646;
+      fill:#528881;
       fill-opacity:0;
       stroke-width:2px;
-      stroke: #f79646;
+      stroke: #528881;
     }
     .vis-graph-group2 {
       fill: #8c51cf;
@@ -134,31 +134,28 @@
       float:left;
       height:3em;
       width:1em;
-      padding-left:1em;
-      padding-right:1em;
+      padding:0.15em 1em;
     }
 
     div.icon-container {
       float:left;
-        padding: 3px;
+      padding: 3px;
 
     }
 
     div.legend-element-container {
       display:inline-block;
-        position: relative;
+      position: relative;
       width:10em;
       height:3em;
-      border-style:solid;
-      border-width:1px;
-        font-family: 'Armata', sans-serif;
-        font-size: 13px;
-      border-color: #e0e0e0;
+      margin-bottom: -7em;
+      margin-left: 3.5em;
+      margin-right: -2.5em;
+      border: 1px solid #9E8A99;
+      font-family: 'Armata', sans-serif;
+      font-size: 13px;
       background-color: #ffffff;
-        align-items: flex-end;
-        margin-top: 10em;
-        margin-bottom: -7em;
-        margin-left: 2em;
+      align-items: flex-end;
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -khtml-user-select: none;
@@ -177,7 +174,8 @@
     }
     div.external-legend {
       position:relative;
-      margin-left: -5px;
+      margin-left: -2px;
       width: 900px;
+      height: 10px;
     }
 
