@@ -5,7 +5,8 @@
     position: relative;
     float: left;
     margin:4em 3.1em;
-    border: 1px solid #9E8A99;
+    border: 0.2em solid #9E8A99; 
+
 
 }
 
@@ -151,7 +152,7 @@
       margin-bottom: -7em;
       margin-left: 3.5em;
       margin-right: -2.5em;
-      border: 1px solid #9E8A99;
+        border: 0.2em solid #9E8A99; 
       font-family: 'Armata', sans-serif;
       font-size: 13px;
       background-color: #ffffff;

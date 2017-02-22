@@ -2,15 +2,16 @@
     height: 50px;
     width: 580px;
     background-color: #FBF4E9;
-    border: 1px solid #9E8A99;
     font-size: 13px;
     margin-left: 3.4em;
+    border: 0.2em solid #9E8A99; 
+
 }
 #graphinstructions p{ padding: 3px 7px;}
 
 #sentiment{ 
     position: relative;
-    border: 1px solid #9E8A99;
+    border: 0.2em solid #9E8A99; 
     width: 37em;
     height: 40em;
     float: left;
