@@ -1,14 +1,30 @@
 .tipsBox{
     width: 40%;
-    height: 40em;
+    height: 45em;
     background-color: aqua;
     position: relative;
     display: inline-block;
     margin: 1.3em 3em;    text-align: center;
     border: 0.2em solid #9E8A99; 
     background-color: #FBF4E9;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "Lucida Grande", sans-serif;
 
-    
+
 }
 
+.individualTips{
+    width: 100%;
+    position: relative;
+    height: 7em; 
+    background-color: #9E8A99;
+    margin: 1em 0px;
+    align-content: center;
+    text-align: left;
+    padding: 2em;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 15px;
+    color: #FBF4E9;
+
+}

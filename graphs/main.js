@@ -1,6 +1,12 @@
 $(document).ready(function() {
         var names = ['Facebook', 'Instagram', 'Text Messages', 'Snapchat'];
     
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        tabcontent[0].style.display = "block";
+        tabcontent[1].style.display = "none";
+        tabcontent[2].style.display = "none";
+
+    
         var groups = new vis.DataSet();
             groups.add({
                 id: 0,

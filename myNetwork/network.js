@@ -100,24 +100,48 @@ $(document).ready(function(){
         }
     };
 
+    // initialize network
+    var network = new vis.Network(container, data, options);
+    var tabcontent;
+    
+    
+    //initialize "tabs" for info box on right -- all should be hidden except the "me" page
+    tabcontent = document.getElementsByClassName("tabs");
+    for (var i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    };
+    var homeTab = document.getElementById("hometab");
+    homeTab.style.display = "block";
     
 
-    // initialize your network!
-    var network = new vis.Network(container, data, options);
     
+    //switch "tabs" when nodes are clicked. Special case for home tab
     network.on("click", function (params) {
+        tabcontent = document.getElementsByClassName("tabs");
+            for (var i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    };
+        
         if (params.nodes.length != 0) {
-            console.log(params);
-           var infoName = document.getElementById("infoName");
+            var infoName = document.getElementById("infoName");
             var ids = params.nodes;
             var clickedNodes = nodes.get(ids);
             var name = clickedNodes[0].label;
-            infoName.innerHTML = "Settings for " + name + ":";}
+
+            
+            for (var t = 0; t <tabcontent.length; t++){
+                if (name=="Me"){
+                    homeTab.style.display ="block";
+                }
+                else{
+                    if (tabcontent[t].innerHTML.includes(name)){
+                        tabcontent[t].style.display = "block";
+                        homeTab.style.display = "none";
+                    }
+                    else{
+                        tabcontent[t].style.display = "none";}
+                }
+                }     
+            }
     });
-    
-    
-   /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-    
-  
 });

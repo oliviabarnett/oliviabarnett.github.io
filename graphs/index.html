@@ -45,20 +45,23 @@
           </div>
         </div>
 
-        <div id="Legend" class="external-legend"></div>
-        
-        <div id="graphinstructions">
-        <p>Click the key buttons below to show or hide data gathered from that specific social media account. Navigate through data from a different date by dragging your mouse around the graph.</p>
+        <div id = "wrap">
+            <div id="graphinstructions">
+            <p>Click the key buttons below to show or hide data gathered from that specific social media account. Navigate through data from a different date by dragging your mouse around the graph.</p>
+            </div>
+
+            <div id="Legend" class="external-legend"></div>
+
+
+            <div id="visualization"></div>
         </div>
-        
-        <div id="visualization"></div>
 
         
          <div id = "sentiment">
             <ul class="tab">
-            <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'smactivity')">Social Media Activity</a></li>
-            <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'sentimentanalysis')">Sentiment Analysis</a></li>
-            <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'comparisons')">Comparisons</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'smactivity')">Social Media Activity</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'sentimentanalysis')">Sentiment Analysis</a></li>
+            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'comparisons')">Comparisons</a></li>
             </ul>
         <div id="smactivity" class="tabcontent">
         <p>The following data depicts your activity for this week:</p><p><b>Facebook</b><br>Posts: 4<br>Likes: 57<br>Shares: 1<br>Direct Messages: 18 messages with 3 users</p><p><b>Twitter</b><br>Tweets: 12<br>ReTweets: 3<br>Favorites: 11<br>Direct Messages: 2 messages with 1 user</p><p><b>Instagram</b><br>Posts: 0<br>Likes: 44<br>Saved Posts: 3<br>Followed: 4 new accounts<br> Unfollowed: 2 accounts</p>

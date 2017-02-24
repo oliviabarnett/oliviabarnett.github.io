@@ -1,11 +1,11 @@
 
+
 #visualization{
-    width: 40em;
+    width: 100%;
     height: 35em;
     position: relative;
-    float: left;
-    margin:4em 3.1em;
     border: 0.2em solid #9E8A99; 
+    margin-top: 2em;
 
 
 }
@@ -123,7 +123,7 @@
       stroke-width:1px;
       fill-opacity:1;
       fill: #ffffff;
-      stroke: #e5e5e5;
+      stroke: white;
     }
 
     .vis-icon-fill {
@@ -132,10 +132,12 @@
     }
 
     div.description-container {
-      float:left;
-      height:3em;
-      width:1em;
-      padding:0.15em 1em;
+        float: left;
+        text-align: center;
+      height:100%;
+      width:60%;
+        padding-top: .5em;
+        padding-left: .3em;
     }
 
     div.icon-container {
@@ -147,16 +149,15 @@
     div.legend-element-container {
       display:inline-block;
       position: relative;
-      width:10em;
-      height:3em;
-      margin-bottom: -7em;
-      margin-left: 3.5em;
-      margin-right: -2.5em;
+        float: left;
+      width:20%;
+        margin: 0px 1em;
+        padding: none;
+      height:100%;
         border: 0.2em solid #9E8A99; 
-      font-family: 'Armata', sans-serif;
+        font-family: "Lucida Grande", sans-serif;
       font-size: 13px;
       background-color: #ffffff;
-      align-items: flex-end;
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -khtml-user-select: none;
@@ -164,7 +165,19 @@
       -ms-user-select: none;
       user-select: none;
       cursor:pointer;
+        overflow: hidden;
+        
     }
+
+
+#wrap{
+    margin-left: 2em;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-top: 1.3em;
+}
 
     div.legend-element-container.hidden {
       background-color: #d3e6ff;
@@ -175,8 +188,8 @@
     }
     div.external-legend {
       position:relative;
-      margin-left: -2px;
-      width: 900px;
-      height: 10px;
+      width: 100%;
+      height: 4em;
+        overflow-y: scroll;
     }
 
