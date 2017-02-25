@@ -37,10 +37,10 @@ $(document).ready(function(){
               useBorderWithImage: false  // only for image shape
             },
             color: {
-              border: "gray",
-              background: '#9E8A99',
+              border: '#393E41',
+              background: '#C4B2BC',
               highlight: {
-                border: '#9E8A99',
+                border: '#393E41',
                 background: '#cec0ca'
               },
               hover: {
@@ -49,9 +49,9 @@ $(document).ready(function(){
               }
             },
             font: {
-              color: 'black',
+              color: '#393E41',
               size: 14, // px
-              face: 'arial',
+              face: 'raleway, sans-serif',
               background: 'none',
               strokeWidth: 0, // px
               strokeColor: '#ffffff',
@@ -91,11 +91,11 @@ $(document).ready(function(){
         
         edges: {
             arrows: {
-                to: {enabled: true, scaleFactor:1, type:'arrow'},},
+                from: {enabled: true, scaleFactor:1, type:'arrow'},},
             smooth: {
               enabled: true,
               type: "dynamic",
-              roundness: 0.5
+              roundness: 0.7
             }
         }
     };
@@ -117,12 +117,17 @@ $(document).ready(function(){
     
     //switch "tabs" when nodes are clicked. Special case for home tab
     network.on("click", function (params) {
-        tabcontent = document.getElementsByClassName("tabs");
+        
+        
+        if (params.nodes.length != 0) {
+            
+            tabcontent = document.getElementsByClassName("tabs");
             for (var i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     };
-        
-        if (params.nodes.length != 0) {
+            
+            
+            
             var infoName = document.getElementById("infoName");
             var ids = params.nodes;
             var clickedNodes = nodes.get(ids);

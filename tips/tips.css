@@ -5,11 +5,11 @@
     position: relative;
     display: inline-block;
     margin: 1.3em 3em;    text-align: center;
-    border: 0.2em solid #9E8A99; 
-    background-color: #FBF4E9;
+    background-color: #D8D4F2;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: "Lucida Grande", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #393E41;
 
 
 }
@@ -18,17 +18,17 @@
     width: 100%;
     position: relative;
     height: 7em; 
-    background-color: #9E8A99;
+    background-color: #C4B2BC;
     margin: 1em 0px;
     align-content: center;
     text-align: left;
-    padding: 2em;
-    font-family: "Lucida Grande", sans-serif;
-    font-size: 15px;
-    color: #FBF4E9;
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: #393E41;
 
 }
 
 a {
-    color: #FBF4E9;
+    color: #393E41;
 }

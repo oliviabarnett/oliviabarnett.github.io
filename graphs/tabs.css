@@ -1,28 +1,16 @@
-#graphinstructions{
-    width: 100%;
-    height: 5em;
-    background-color: #FBF4E9;
-    font-size: 13px;
-    border: 0.2em solid #9E8A99; 
-    position: relative;
-    margin-bottom: 2em;
-    overflow: scroll;
 
-}
-#graphinstructions p{ padding: 3px 7px;
-    font-family: "Lucida Grande", sans-serif;
-}
 
 #sentiment{ 
     position: relative;
-    border: 0.2em solid #9E8A99; 
-    width: 37em;
-    height: 47em;
+    width: 30%;
+    height: 65%;
     float: left;
-    background-color: #FBF4E9; 
-    font-family: "Lucida Grande", sans-serif;
-    margin: 1.3em 9em;
+    background-color: #C4B2BC; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin: 1em 9em;
     overflow: scroll;
+    color: #393E41;
     
     
 
@@ -32,10 +20,12 @@ ul.tab {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    border: 1px solid #9E8A99;
-    background-color: #9E8A99;
-    display: inline-block;
+    background-color: #D8D4F2;
+    font-family: 'Raleway', sans-serif;
     width: 100%;
+    display: inline-block;
+
+
 }
 
 /* Float the list items side by side */
@@ -43,8 +33,12 @@ ul.tab {
 ul.tab li {
     float: left;
     position: relative;
-    width: 12em;
-    height: 5em;
+    width: 33.33333%;
+    display: inline-block;
+
+    
+    
+
 }
 
 /* Style the links inside the list items */
@@ -54,7 +48,9 @@ ul.tab li a {
     text-decoration: none;
     font-size: 12px;
     display: inline-block;
-    width: 15em;
+    width: 100%;
+    color: #393E41;
+    font-family: 'Raleway', sans-serif;
     height: 8em;
 }
 
@@ -67,6 +63,7 @@ ul.tab li a:focus, .active {background-color: #FBF4E9;}
 /* Style the tab content */
 .tabcontent {
     padding: 2px 10px;
+    
 }
 
 p{ padding: 5px 0px; }
