@@ -62,7 +62,7 @@
         <div class="tabs">
                 <h2 id="infoName">Settings for Mom:</h2>
                 <div class="settings">
-                    <label> Update after: </label>
+                    <label class = "headers"> Update after: </label>
                     <select>
                       <option value="one week">one week</option>
                       <option value="two weeks">two weeks</option>
@@ -74,7 +74,7 @@
                     <br>
 
                 <div class="settings">
-                    <label> Alert via: </label>
+                    <label class = "headers"> Alert via: </label>
                     <select>
                       <option value="Text">Text</option>
                       <option value="Email">Email</option>
@@ -84,16 +84,24 @@
                     <br>
 
                 <div class="settings">
-                    <label> Follows: </label>
-                    <div id= "multiSelect">
-                    <div class="radio">
-                        <input type="radio" name="track" id="track" value="track" /><label for="track">Facebook</label><br /> </div>
-                    <div class="radio">
-                        <input type="radio" name="track" id="track" value="track" /><label for="track">Facebook</label><br /> </div>
-                    <div class="radio">
-                        <input type="radio" name="track" id="track" value="track" /><label for="track">Facebook</label><br /> </div>
-                    <div class="radio">
-                        <input type="radio" name="track" id="track" value="track" /><label for="track">Facebook</label><br /> </div>
+                    <div class="control-group">
+                        <p>Follows: </p>
+                        <label class="control control--radio">Facebook
+                            <input type="radio" name="radio" checked="checked"/>
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">Instagram
+                            <input type="radio" name="radio"/>
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">Snapchat
+                            <input type="radio" name="radio2" />
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">Texts
+                            <input type="radio" name="radio2" />
+                            <div class="control__indicator"></div>
+                        </label>
                     </div>
                 </div>
         </div>
