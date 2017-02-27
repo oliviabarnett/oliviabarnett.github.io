@@ -8,6 +8,7 @@ canvas{border: none; }
         position: relative;
         float: left;
         background-color: #D8D4F2;
+        border-radius: 5px;
 
     }
 
@@ -24,6 +25,7 @@ canvas{border: none; }
     width: 25%;
     height: 33.4em;
     color: #393E41;
+    border-radius: 5px;
 
 }
 

@@ -1,5 +1,4 @@
 
-
 #sentiment{ 
     position: relative;
     width: 30%;
@@ -11,8 +10,7 @@
     margin: 1em 9em;
     overflow: scroll;
     color: #393E41;
-    
-    
+    border-radius: 5px;
 
 }
 ul.tab {
@@ -24,6 +22,8 @@ ul.tab {
     font-family: 'Raleway', sans-serif;
     width: 100%;
     display: inline-block;
+    border-top-radius: 5px;
+
 
 
 }

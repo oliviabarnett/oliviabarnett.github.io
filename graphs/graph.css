@@ -6,10 +6,7 @@
     margin-top: 2em;
     background-color: #D8D4F2;
 
-
 }
-
-
 
     .custom-style1 {
       fill: #f2ea00;
@@ -122,7 +119,7 @@
     }
     .vis-outline {
      
-      fill: #D8D4F2;
+      fill: #C4B2BC;
     }
 
     .vis-icon-fill {
@@ -143,10 +140,12 @@
       float:left;
       padding: 3px;
         background-color: transparent;
+        border-radius: 10px;
     }
 
    
     div.legend-element-container {
+        border-radius: 5px;
       display:inline-block;
       position: relative;
         float: left;
@@ -156,7 +155,7 @@
       height:100%;
     font-family: 'Raleway', sans-serif;
       font-size: 13px;
-    background-color: #D8D4F2;
+    background-color: #C4B2BC;
         color: #393E41;
 
       -webkit-touch-callout: none;
@@ -168,10 +167,15 @@
       cursor:pointer;
         overflow: hidden;
         
+        
+        
     }
 
 div.legend-element-container:hover{
     background-color: #FBF4E9;
+    -moz-transition: all .75s;
+    -webkit-transition: all .75s;
+    -o-transition: all .75s;
 }
 
 div.legend-element-container:active{
