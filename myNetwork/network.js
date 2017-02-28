@@ -43,10 +43,10 @@ $(document).ready(function(){
                 border: '#393E41',
                 background: '#cec0ca'
               },
-              hover: {
-                border: '#9E8A99',
-                background: '#cec0ca'
-              }
+            hover: {
+                border: '#2B7CE9',
+                background: '#D2E5FF'
+            },
             },
             font: {
               color: '#393E41',

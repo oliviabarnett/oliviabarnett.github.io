@@ -47,23 +47,20 @@ canvas{border: none; }
   height: 20%;
   /* To see the outline of the form */
   text-align: left;
-    padding-left: .4em;
 
 }
 
 select{
-   height: 34px;
-   width: 240px;
    height: 29px;
+    font-size: 18px;
     float: right;
    overflow: hidden;
-   width: 50%;
+   width: 40%;
     background-color: #ddd;
     font-family: 'Raleway', sans-serif;
     color: #393E41;
-    margin: 10px;
-	padding: 30px;
-	text-align: left;
+    margin-top: 2em;
+    margin-right: 10px;
 }
 
 .control-group {
