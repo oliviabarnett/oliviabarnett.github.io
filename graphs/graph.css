@@ -1,10 +1,10 @@
 
 #visualization{
-    width: 100%;
     height: 41em;
     position: relative;
-    margin-top: 2em;
+    margin-top: 1em;
     background-color: #D8D4F2;
+    border-radius: 5px;
 
 }
 
@@ -145,12 +145,12 @@
 
    
     div.legend-element-container {
-        border-radius: 5px;
-      display:inline-block;
+        
+      border-radius: 5px;
       position: relative;
         float: left;
       width:20%;
-        margin: 0px 1em;
+        margin: 1em 1em;
         padding: none;
       height:100%;
     font-family: 'Raleway', sans-serif;
@@ -171,6 +171,8 @@
         
     }
 
+row 
+
 div.legend-element-container:hover{
     background-color: #FBF4E9;
     -moz-transition: all .75s;
@@ -183,17 +185,6 @@ div.legend-element-container:active{
 }
 
 
-
-
-#wrap{
-    margin-left: 2em;
-    position: relative;
-    width: 40%;
-    height: 100%;
-    float: left;
-    margin-top: 1.3em;
-}
-
     div.legend-element-container.hidden {
       background-color: #d3e6ff;
     }
@@ -201,10 +192,5 @@ div.legend-element-container:active{
       width:30px;
       height:30px;
     }
-    div.external-legend {
-      position:relative;
-      width: 100%;
-      height: 4em;
-        overflow-y: scroll;
-    }
+   
 

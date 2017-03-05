@@ -10,12 +10,4 @@ window.onclick = function(event) {
 }
 
 
-
-
-
-
-
-
-
-
 });

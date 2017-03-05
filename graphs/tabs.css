@@ -1,26 +1,20 @@
 
 #sentiment{ 
-    position: relative;
-    width: 30%;
-    height: 34em;
-    float: left;
+    height: 36em;
     background-color: #C4B2BC; 
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    margin: 1em 9em;
     overflow: scroll;
     color: #393E41;
     border-radius: 5px;
+    margin-top: 1em;
 
 }
 ul.tab {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
     overflow: hidden;
     background-color: #D8D4F2;
     font-family: 'Raleway', sans-serif;
-    width: 100%;
     display: inline-block;
     border-top-radius: 5px;
 
@@ -30,26 +24,12 @@ ul.tab {
 
 /* Float the list items side by side */
 /* this is the purple tab div*/
-ul.tab li {
-    float: left;
-    position: relative;
-    width: 33.33333%;
-    display: inline-block;
-
-    
-    
-
-}
 
 /* Style the links inside the list items */
 ul.tab li a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    display: inline-block;
-    width: 100%;
     color: #393E41;
+    font-size: 12px;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     height: 8em;
 }
@@ -61,9 +41,4 @@ ul.tab li a:hover {background-color: #FBF4E9;}
 ul.tab li a:focus, .active {background-color: #FBF4E9;}
 
 /* Style the tab content */
-.tabcontent {
-    padding: 2px 10px;
-    
-}
 
-p{ padding: 5px 0px; }

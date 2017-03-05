@@ -11,13 +11,15 @@
 		<link rel="stylesheet" href="../main.css">
         <link rel="stylesheet" href="network.css">
 
-        
-        
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
          
         <script type="text/javascript" src="vis.min.js"></script>
     <link href="vis.min.css" rel="stylesheet" type="text/css" />
         <script src="network.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         
 	    <title>My Support Network</title>
 
@@ -25,178 +27,178 @@
 
 	<body>
 
-        <div id="header">
-            <a href = "../index.html"> 
-                <img id = "logo"  src = "../pic.png" >
+        <div class = "container-fluid">
+            <a class = "row" href = "../index.html"> 
+                <img id = "logo" src = "../pic.png" >
             </a>
-            
-            
-          <div id="nav">
-            <ul class="main-menu">
-                <li> <a href="../tips/"> tips and exercises</a> </li>
-                <li> <a href="../graphs/">my data</a></li>
-                <li> <a href="./">my network</a></li>
-                <li> <a> community</a></li>
+            <ul class = "row">
+                <li class = "col-xs-12 col-sm-3"> <a href="../tips/index.html"> tips and exercises</a> </li>
+                <li class = "col-xs-12 col-sm-3"> <a href="../graphs/index.html">my data</a></li>
+                <li class = "col-xs-12 col-sm-3"> <a href="./">my network</a></li>
+                <li class = "col-xs-12 col-sm-3"> <a> community</a></li>
+
            </ul>
-          </div>
         </div>
 
         
-
-    
-    <div id= "welcome">
-            
-        </div>   
-        
-    <div id="mynetwork"></div>
-
-        
-    <div id="info">
-        <div class = "tabs" id ="hometab" >
-            <h2 id="infoName">Settings for Me:</h2>
-                <p>Welcome to your Support Network. This network is an automatic system that
-            informs the three people in your network in the case that data analysis 
-            yields results indicating you have not been feeling well lately. We know it's hard to ask people for help and support. We also know that sometimes, you yourself don't know that you could use someone's help or support. My Support Network takes care of updating, informing and explaining your feelings to the people in your network.</p>
-            <p>Click on individual members of your Support Network to view detailed information about their profile and to manage their settings.<br> <br> Click on <i>"Manage My Support Network"</i> to edit members of your network and their contact information. <br> <br> Use your mouse pad to zoom in and out of the network. </p>
+<div class="container">
+    <div class = "row">
+        <div class = "col-lg-8 col-md-8 col-sm-12">
+            <div id="mynetwork"></div>
         </div>
-        <div class="tabs">
-                <h2 id="infoName">Settings for Mom:</h2>
-                <div class="settings">
-                    <label class = "headers"> Update after: </label>
-                    <select>
-                      <option value="one week">one week</option>
-                      <option value="two weeks">two weeks</option>
-                      <option value="one month">one month</option>
-                      <option value="six months">six months</option>
-                    </select>
-                </div>
 
-                    <br>
+        <div class = "col-lg-4 col-md-4 col-sm-12">
 
-                <div class="settings">
-                    <label class = "headers"> Alert via: </label>
-                    <select>
-                      <option value="Text">Text</option>
-                      <option value="Email">Email</option>
-                      <option value="Facebook Message">Facebook message</option>
-                    </select>
-                </div>
-                    <br>
-
-                <div class="settings">
-                    <div class="control-group">
-                        <p>Follows: </p>
-                        <label class="control control--radio">Facebook
-                            <input type="radio" name="radio" />
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Instagram
-                            <input type="radio" name="radio2"/>
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Snapchat
-                            <input type="radio" name="radio2" />
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Texts
-                            <input type="radio" name="radio2" />
-                            <div class="control__indicator"></div>
-                        </label>
+        <div id="info">
+            <div class = "tabs" id ="hometab" >
+                <h2 id="infoName">Settings for Me:</h2>
+                    <p>Welcome to your Support Network. This network is an automatic system that
+                informs the three people in your network in the case that data analysis 
+                yields results indicating you have not been feeling well lately. We know it's hard to ask people for help and support. We also know that sometimes, you yourself don't know that you could use someone's help or support. My Support Network takes care of updating, informing and explaining your feelings to the people in your network.</p>
+                <p>Click on individual members of your Support Network to view detailed information about their profile and to manage their settings.<br> <br> Click on <i>"Manage My Support Network"</i> to edit members of your network and their contact information. <br> <br> Use your mouse pad to zoom in and out of the network. </p>
+</div>
+            <div class="tabs">
+                    <h2 id="infoName">Settings for Mom:</h2>
+                    <div class="settings">
+                        <label class = "headers"> Update after: </label>
+                        <select>
+                          <option value="one week">one week</option>
+                          <option value="two weeks">two weeks</option>
+                          <option value="one month">one month</option>
+                          <option value="six months">six months</option>
+                        </select>
                     </div>
-                </div>
-        </div>
-        <div class="tabs">
-                <h2 id="infoName">Settings for Isa:</h2>
-                <div class="settings">
-                    <label class = "headers"> Update after: </label>
-                    <select>
-                      <option value="one week">one week</option>
-                      <option value="two weeks">two weeks</option>
-                      <option value="one month">one month</option>
-                      <option value="six months">six months</option>
-                    </select>
-                </div>
 
-                    <br>
+                        <br>
 
-                <div class="settings">
-                    <label class = "headers"> Alert via: </label>
-                    <select>
-                      <option value="Text">Text</option>
-                      <option value="Email">Email</option>
-                      <option value="Facebook Message">Facebook message</option>
-                    </select>
-                </div>
-                    <br>
-
-                <div class="settings">
-                    <div class="control-group">
-                        <p>Follows: </p>
-                        <label class="control control--radio">Facebook
-                            <input type="radio" name="radio" />
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Instagram
-                            <input type="radio" name="radio2"/>
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Snapchat
-                            <input type="radio" name="radio2" />
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Texts
-                            <input type="radio" name="radio2" />
-                            <div class="control__indicator"></div>
-                        </label>
+                    <div class="settings">
+                        <label class = "headers"> Alert via: </label>
+                        <select>
+                          <option value="Text">Text</option>
+                          <option value="Email">Email</option>
+                          <option value="Facebook Message">Facebook message</option>
+                        </select>
                     </div>
-                </div>
-        </div>
-        <div class="tabs">
-                <h2 id="infoName">Settings for Willa:</h2>
-                <div class="settings">
-                    <label class = "headers"> Update after: </label>
-                    <select>
-                      <option value="one week">one week</option>
-                      <option value="two weeks">two weeks</option>
-                      <option value="one month">one month</option>
-                      <option value="six months">six months</option>
-                    </select>
-                </div>
+                        <br>
 
-                    <br>
-
-                <div class="settings">
-                    <label class = "headers"> Alert via: </label>
-                    <select>
-                      <option value="Text">Text</option>
-                      <option value="Email">Email</option>
-                      <option value="Facebook Message">Facebook message</option>
-                    </select>
-                </div>
-                    <br>
-
-                <div class="settings">
-                    <div class="control-group">
-                        <p>Follows: </p>
-                        <label class="control control--radio">Facebook
-                            <input type="radio" name="radio" />
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Instagram
-                            <input type="radio" name="radio2"/>
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Snapchat
-                            <input type="radio" name="radio2" />
-                            <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">Texts
-                            <input type="radio" name="radio2" />
-                            <div class="control__indicator"></div>
-                        </label>
+                    <div class="settings">
+                        <div class="control-group">
+                            <p>Follows: </p>
+                            <label class="control control--radio">Facebook
+                                <input type="radio" name="radio" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Instagram
+                                <input type="radio" name="radio2"/>
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Snapchat
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Texts
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </div>
                     </div>
-                </div>
+            </div>
+            <div class="tabs">
+                    <h2 id="infoName">Settings for Isa:</h2>
+                    <div class="settings">
+                        <label class = "headers"> Update after: </label>
+                        <select>
+                          <option value="one week">one week</option>
+                          <option value="two weeks">two weeks</option>
+                          <option value="one month">one month</option>
+                          <option value="six months">six months</option>
+                        </select>
+                    </div>
+
+                        <br>
+
+                    <div class="settings">
+                        <label class = "headers"> Alert via: </label>
+                        <select>
+                          <option value="Text">Text</option>
+                          <option value="Email">Email</option>
+                          <option value="Facebook Message">Facebook message</option>
+                        </select>
+                    </div>
+                        <br>
+
+                    <div class="settings">
+                        <div class="control-group">
+                            <p>Follows: </p>
+                            <label class="control control--radio">Facebook
+                                <input type="radio" name="radio" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Instagram
+                                <input type="radio" name="radio2"/>
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Snapchat
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Texts
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="tabs">
+                    <h2 id="infoName">Settings for Willa:</h2>
+                    <div class="settings">
+                        <label class = "headers"> Update after: </label>
+                        <select>
+                          <option value="one week">one week</option>
+                          <option value="two weeks">two weeks</option>
+                          <option value="one month">one month</option>
+                          <option value="six months">six months</option>
+                        </select>
+                    </div>
+
+                        <br>
+
+                    <div class="settings">
+                        <label class = "headers"> Alert via: </label>
+                        <select>
+                          <option value="Text">Text</option>
+                          <option value="Email">Email</option>
+                          <option value="Facebook Message">Facebook message</option>
+                        </select>
+                    </div>
+                        <br>
+
+                    <div class="settings">
+                        <div class="control-group">
+                            <p>Follows: </p>
+                            <label class="control control--radio">Facebook
+                                <input type="radio" name="radio" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Instagram
+                                <input type="radio" name="radio2"/>
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Snapchat
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Texts
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+            </div>
         </div>
+        </div>
+    </div>
+</div>
 
 	</body>
 </html>

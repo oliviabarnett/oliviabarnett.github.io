@@ -13,97 +13,104 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Pacifico' type='text/css' />
         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        
         <script src= "tips.js"> </script>
         <?php include 'form.php';?>
 	</head>
 
 	<body>
-        <div id="header">
-            <a href = "../index.html"> 
-                <img id = "logo"  src = "../pic.png" >
+        <div class = "container-fluid">
+            <a class = "row" href = "../index.html"> 
+                <img id = "logo" src = "../pic.png" >
             </a>
-            
-          <div id="nav">
-            <ul class="main-menu">
-                <li> <a href="./"> tips and exercises</a> </li>
-                <li> <a href="../graphs/">my data</a></li>
-                <li> <a href="../myNetwork/">my network</a></li>
-                <li> <a> community</a></li>
-                
-      
+            <ul class = "row">
+                <li class = "col-xs-12 col-sm-3"> <a href="./"> tips and exercises</a> </li>
+                <li class = "col-xs-12 col-sm-3"> <a href="../graphs/index.html">my data</a></li>
+                <li class = "col-xs-12 col-sm-3"> <a href="../myNetwork/index.html">my network</a></li>
+                <li class = "col-xs-12 col-sm-3"> <a> community</a></li>
+
            </ul>
-          </div>
         </div>
         
-
-        <div class="tipsBox">
-            <h2> Short Term Tips and Exercises </h2>
+<div class = "container-fluid">
+    <div class = "row" id = "both-tips">
+        <div class = "col-lg-6 col-md-6 col-sm-6 pull-center" class="tipsBox">
+            <table class = "table">
+                <thead> 
+                    <tr>
+                        <th class = "header">Short Term Tips and Exercises</th>
+                    </tr>
+                    
+                </thead>
             
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Quick Mindfulness Session </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> 10 min Workout</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>SOS Meditation </a>
-                </div>
+            <tbody>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        
+        <div class = "col-lg-6 col-md-6 col-sm-6 " class="tipsBox">
+            <table class = "table">
+                <thead> 
+                    <tr>
+                        <th class = "header">Long Term Tips and Exercises</th>
+                    </tr>
+                </thead>
             
+            <tbody>
+            
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                <tr class = "button" href="" data-model = "#popup1" class="modal__trigger"> 
+                    <th><a>SOS Meditation </a></th>
+                </tr>
+                
+            </tbody>
+            </table>
         </div>
-        
-        <div class="tipsBox" id="two"> 
-            <h2> Long Term Tips and Exercises </h2>
-                <div class = "individualTips"> 
-                    <a>Daily Meditation: Day 12</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a>Public Speaking Exercises </a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Build a Stress Management Strategy Sheet</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Long term strategies</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Long term strategies</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Long term strategies</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Long term strategies</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Long term strategies</a>
-                </div>
-                <div class = "individualTips"> 
-                    <a> Long term strategies</a>
-                </div>
-        
-        </div>
+    </div>
 
+        
+        
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Here i am</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Thank to pop me out of that button, but now i'm done so you can close this window.
+            </div>
+	   </div>
+    </div>
+    
+
+</div>
         
     	
         

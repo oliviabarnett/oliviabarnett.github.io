@@ -12,6 +12,10 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="tabs.js" type="text/javascript"></script>
         <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Pacifico' type='text/css' />
+    
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         
         <script src="vis.min.js"></script>
         <link href="vis.min.css" rel="stylesheet" type="text/css" />
@@ -26,37 +30,36 @@
 
 	<body>
 
-        <div id="header">
-            <a href = "../index.html"> 
-                <img id = "logo"  src = "../pic.png" >
+        <div class = "container-fluid">
+            <a class = "row" href = "../index.html"> 
+                <img id = "logo" src = "../pic.png" >
             </a>
-            
-          <div id="nav">
-            <ul class="main-menu">
-                <li> <a href="../tips/"> tips and exercises</a> </li>
-                <li> <a href="./">my data</a></li>
-                <li> <a href="../myNetwork/">my network</a></li>
-                <li> <a> community</a></li>
+            <ul class = "row">
+                <li class = "col-xs-12 col-sm-3"> <a href="../tips/index.html"> tips and exercises</a> </li>
+                <li class = "col-xs-12 col-sm-3"> <a href="./">my data</a></li>
+                <li class = "col-xs-12 col-sm-3"> <a href="../myNetwork/index.html">my network</a></li>
+                <li class = "col-xs-12 col-sm-3"> <a> community</a></li>
+
            </ul>
-          </div>
         </div>
 
-        <div id = "wrap">
-            
-
-            <div id="Legend" class="external-legend"></div>
-
-
-            <div id="visualization"></div>
+<div class = "container">
+    <div class = "row">
+        <div class = "col-lg-7 col-md-7 col-sm-12 pull-left">
+            <div class = "row" id="Legend" class="external-legend"></div>
+            <div class = "row" id="visualization"></div>
         </div>
 
         
-         <div id = "sentiment">
-            <ul class="tab">
-            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'smactivity')">Social Media Activity</a></li>
-            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'sentimentanalysis')">Sentiment Analysis</a></li>
-            <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'comparisons')">Comparisons</a></li>
-            </ul>
+         <div class = "col-lg-4 col-md-4 col-sm-5 pull-right" id = "sentiment">
+             <div class = "row">
+                <ul class="tab">
+                <li class = "col-lg-4 col-md-4 col-sm-4"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'smactivity')">Social Media Activity</a></li>
+                <li class = "col-lg-4 col-md-4 col-sm-4"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'sentimentanalysis')">Sentiment Analysis</a></li>
+                <li class = "col-lg-4 col-md-4 col-sm-4"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'comparisons')">Comparisons</a></li>
+                </ul>
+                 </div>
+             <div class = "row-fluid">
         <div id="smactivity" class="tabcontent">
         <p>The following data depicts your activity for this week:</p><p><b>Facebook</b><br>Posts: 4<br>Likes: 57<br>Shares: 1<br>Direct Messages: 18 messages with 3 users</p><p><b>Twitter</b><br>Tweets: 12<br>ReTweets: 3<br>Favorites: 11<br>Direct Messages: 2 messages with 1 user</p><p><b>Instagram</b><br>Posts: 0<br>Likes: 44<br>Saved Posts: 3<br>Followed: 4 new accounts<br> Unfollowed: 2 accounts</p>
         </div>
@@ -69,7 +72,8 @@
         <p>The following is how your social media activity for the week compares to your past activity. If you believe any of the following data was incorrectly measured, you may input information about how your week was manually using the "Notes" page on the main menu.</p><p><b>Last Week - </b>Compared to last week, your posts and message content has been more positive. Last week you indicated that you were unhappy 4 days out of the week. This week, we only found you felt similarly 1 day out of the week. The content of your activity suggests that the source of your unhappiness has been related to a heavy workload, a conflict at work and stress. We encourage you to click the "Tips and Exercises" page on the main menu and try the tips and suggestions under "Stress" and "Arguments and Conflicts".</p><p><b>Last Month - </b> Compared to the last month, you have had a similarly neutral week. Despite unhappy moments and a few difficult days, you have been stable and consistent. To add an extra boost to your mood, try the exercise "Little Things That Makes Us Smile" exercise under the "Tips and Exercises" page on the main menu.</p>
         </div>
         </div>
-
-
+        </div>
+    </div>
+</div>
 	</body>
 </html>
