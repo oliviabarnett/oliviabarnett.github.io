@@ -171,8 +171,6 @@
         
     }
 
-row 
-
 div.legend-element-container:hover{
     background-color: #FBF4E9;
     -moz-transition: all .75s;
@@ -181,7 +179,7 @@ div.legend-element-container:hover{
 }
 
 div.legend-element-container:active{
-    background-color: #ffffff;
+    background-color: #FFE348;
 }
 
 

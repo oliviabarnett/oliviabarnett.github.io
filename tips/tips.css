@@ -21,11 +21,36 @@
     transition: all 0.3s ease-out;
 }
 
+table {
+        width: 100%;
+    }
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+
+tbody {
+    height: 40em;
+    overflow-y: auto;
+
+}
+
+
+tbody td, thead th {
+    width: 100%;
+    float: left;
+}
+
 .button a {
     color: #393E41;
     font-family: 'Raleway', sans-serif;
 }
-
 
 .header{
     background-color: #D8D4F2;
