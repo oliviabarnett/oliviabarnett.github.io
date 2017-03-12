@@ -146,7 +146,7 @@ ul li a {
 
 ul li:hover a {
   background-color: #FFDFCC;
-  color: #9E8A99;
+  color: #FFF3B5;
 }
 
 li ul { display: none; }

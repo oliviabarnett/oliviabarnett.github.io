@@ -8,11 +8,20 @@
     color: #393E41;
 }
 
+th a{
+    font-family: cursive;
+    color: #808080;
+    
+}
+th{
+    font-size: 14px;
+}
+
 .button{
     width: 100%;
     position: relative;
     height: 7em; 
-    background-color: #C4B2BC;
+    background-color: #FFFFC9;
     align-content: center;
     text-align: left;
     font-size: 17px;
@@ -53,7 +62,7 @@ tbody td, thead th {
 }
 
 .header{
-    background-color: #D8D4F2;
+    background-color: #FFE4C9;
     font-size: 25px;
     border-radius: 5px;
 }

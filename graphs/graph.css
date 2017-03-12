@@ -1,9 +1,9 @@
 
 #visualization{
-    height: 41em;
+    height: 36em;
     position: relative;
     margin-top: 1em;
-    background-color: #D8D4F2;
+    background-color: #FFFFD0;
     border-radius: 5px;
 
 }
@@ -155,7 +155,7 @@
       height:100%;
     font-family: 'Raleway', sans-serif;
       font-size: 13px;
-    background-color: #C4B2BC;
+    background-color: #FFE1C7;
         color: #393E41;
 
       -webkit-touch-callout: none;

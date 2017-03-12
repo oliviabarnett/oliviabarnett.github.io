@@ -1,9 +1,9 @@
 
 #sentiment{ 
-    height: 36em;
-    background-color: #C4B2BC; 
+    height: 34em;
+    background-color: #FFFFD0; 
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     overflow: scroll;
     color: #393E41;
     border-radius: 5px;
@@ -13,7 +13,7 @@
 ul.tab {
     list-style-type: none;
     overflow: hidden;
-    background-color: #D8D4F2;
+    background-color: #FFE1C7;
     font-family: 'Raleway', sans-serif;
     display: inline-block;
     border-top-radius: 5px;
